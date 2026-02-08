@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="aqi_good">#4CAF50</color>
+    <color name="aqi_fair">#FFEB3B</color>
+    <color name="aqi_moderate">#FF9800</color>
+    <color name="aqi_poor">#F44336</color>
+    <color name="aqi_very_poor">#9C27B0</color>
+    
+    <!-- Login Screen Colors -->
+    <color name="login_primary">#3B82F6</color>
+    <color name="login_primary_dark">#1E40AF</color>
+    <color name="login_card_bg">#1E293B</color>
+    <color name="login_hint">#9CA3AF</color>
+    <color name="login_subtitle">#94A3B8</color>
+    <color name="login_divider">#374151</color>
+    <color name="login_input_stroke">#3B82F6</color>
+    <color name="login_error">#EF4444</color>
+    <color name="login_success">#10B981</color>
+</resources>

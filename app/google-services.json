@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "783503439309",
+    "project_id": "teragaurd-8beea",
+    "storage_bucket": "teragaurd-8beea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783503439309:android:007080bf35961f15e64084",
+        "android_client_info": {
+          "package_name": "com.example.teragaurd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783503439309-h0t2b94da1g9flpbdopjq4tg7dah8c3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.teragaurd",
+            "certificate_hash": "d6fe3f1aefbd2b95ff2a9ce0a4061ff7466aecec"
+          }
+        },
+        {
+          "client_id": "783503439309-dkcf0fh1hfrep0l6j735io3rh171l6q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHB4tkK7XawRXDWfntT9BK9HtoPzYUs5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783503439309-dkcf0fh1hfrep0l6j735io3rh171l6q0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

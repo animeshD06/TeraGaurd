@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">teraGaurd</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_icon">Notification icon</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="achievement_badge">Achievement badge</string>
+    <!-- Replace YOUR_MAPBOX_ACCESS_TOKEN with your actual Mapbox public token -->
+    <string name="mapbox_access_token">pk.eyJ1IjoiYW5pbWVzaGR1YmV5IiwiYSI6ImNta2pvaWYzNDEzdGQzZnFtNzhrYnhwN3oifQ.Q2hTzF-ebB4qSZMNdrA7KA</string>
+    <!-- Firebase Google Sign-In Web Client ID -->
+    <string name="default_web_client_id">783503439309-dkcf0fh1hfrep0l6j735io3rh171l6q0.apps.googleusercontent.com</string>
+</resources>
