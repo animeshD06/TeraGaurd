@@ -5,7 +5,18 @@
     <string name="profile_picture">Profile picture</string>
     <string name="achievement_badge">Achievement badge</string>
     <!-- Replace YOUR_MAPBOX_ACCESS_TOKEN with your actual Mapbox public token -->
-    <string name="mapbox_access_token">pk.eyJ1IjoiYW5pbWVzaGR1YmV5IiwiYSI6ImNta2pvaWYzNDEzdGQzZnFtNzhrYnhwN3oifQ.Q2hTzF-ebB4qSZMNdrA7KA</string>
+    <string name="mapbox_access_token">YOUR_MAPBOX_ACCESS_TOKEN</string>
     <!-- Firebase Google Sign-In Web Client ID -->
     <string name="default_web_client_id">783503439309-dkcf0fh1hfrep0l6j735io3rh171l6q0.apps.googleusercontent.com</string>
+    <string name="app_title">TerraGuard</string>
+    <string name="active_alert_text">ACTIVE ALERT
+Safe enviroment!!</string>
+    <string name="aqi_label">AQI</string>
+    <string name="aqi_value">85</string>
+    <string name="aqi_status">Moderate</string>
+    <string name="current_temp_label">CURRENT TEMP</string>
+    <string name="current_temp_value">28°C</string>
+    <string name="weather_status">Sunny</string>
+    <string name="trend_title">24 HR TREND</string>
+    <string name="loading_trend">Loading trend...</string>
 </resources>

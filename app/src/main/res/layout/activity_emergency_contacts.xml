@@ -95,6 +95,59 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
+    <!-- Safety Features Header -->
+    <LinearLayout
+        android:id="@+id/llSafetyFeatures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cardInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLaunchPanicAlarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Panic Alarm"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#F44336"
+            app:icon="@android:drawable/ic_dialog_alert"
+            app:iconTint="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLaunchFirstAid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="First-Aid"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#2196F3"
+            app:icon="@android:drawable/ic_menu_help"
+            app:iconTint="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Report Incident Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLaunchReportIncident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Report Incident"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#4CAF50"
+        app:icon="@android:drawable/ic_menu_send"
+        app:iconTint="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/llSafetyFeatures"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <!-- Section Title: Emergency Numbers -->
     <TextView
         android:id="@+id/txtEmergencyTitle"
@@ -106,7 +159,7 @@
         android:textStyle="bold"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/cardInfo"
+        app:layout_constraintTop_toBottomOf="@id/btnLaunchReportIncident"
         app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Contacts RecyclerView -->

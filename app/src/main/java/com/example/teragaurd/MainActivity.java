@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     private LocationCallback locationCallback;
     private double latitude, longitude;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 101;
-    // IMPORTANT: Replace "YOUR_API_KEY" with your actual OpenWeatherMap API key
+
     private static final String API_KEY = "72aa5ebf5045980623cd8ff3e86a6e01";
 
     private TextView txtTemp, txtAqi, txtAqiStatus, txtChartLoading;
@@ -84,13 +84,22 @@ public class MainActivity extends AppCompatActivity {
         temperatureChart = findViewById(R.id.temperatureChart);
         bottomNavigationView = findViewById(R.id.bottomNav);
 
-        // Set loading state initially
         txtTemp.setText("Loading...");
         txtAqi.setText("...");
         txtAqiStatus.setText("");
 
-        // Setup the temperature trend chart
         setupChart();
+
+        // Bind Quick Action Cards
+        findViewById(R.id.cardPanicMain).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, PanicAlarmActivity.class));
+        });
+        findViewById(R.id.cardFirstAidMain).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, FirstAidActivity.class));
+        });
+        findViewById(R.id.cardReportMain).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, ReportIncidentActivity.class));
+        });
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -119,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-        // Setup location callback for active location requests
         locationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(@NonNull LocationResult locationResult) {

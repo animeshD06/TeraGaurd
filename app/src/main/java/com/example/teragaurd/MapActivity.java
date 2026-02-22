@@ -70,7 +70,7 @@ public class MapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-        // Initialize views
+
         mapView = findViewById(R.id.mapView);
         temperatureTextView = findViewById(R.id.temperatureTextView);
         aqiTextView = findViewById(R.id.aqiTextView);
@@ -78,24 +78,24 @@ public class MapActivity extends AppCompatActivity {
         txtCoordinates = findViewById(R.id.txtCoordinates);
         fabBack = findViewById(R.id.fabBack);
 
-        // Set loading state
+
         temperatureTextView.setText("Loading...");
         aqiTextView.setText("Loading...");
         txtLocationName.setText("Fetching location...");
         txtCoordinates.setText("");
 
-        // Back button functionality
+
         fabBack.setOnClickListener(v -> finish());
 
-        // Initialize Mapbox map with dark style
+
         mapView.getMapboxMap().loadStyleUri(Style.DARK, style -> {
             Log.d(TAG, "Mapbox style loaded successfully");
             
-            // Setup annotation manager for markers
+
             AnnotationPlugin annotationPlugin = AnnotationPluginImplKt.getAnnotations(mapView);
             pointAnnotationManager = PointAnnotationManagerKt.createPointAnnotationManager(annotationPlugin, mapView);
             
-            // Check location permission and get location
+
             if (hasLocationPermission()) {
                 getUserLocation();
             } else {
@@ -105,7 +105,7 @@ public class MapActivity extends AppCompatActivity {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-        // Setup location callback
+
         locationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(@NonNull LocationResult locationResult) {

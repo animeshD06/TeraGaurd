@@ -94,6 +94,19 @@ public class EmergencyContactsActivity extends AppCompatActivity implements Emer
             return true;
         });
 
+        // Setup Emergency Launch Buttons
+        findViewById(R.id.btnLaunchPanicAlarm).setOnClickListener(v -> {
+            startActivity(new Intent(this, PanicAlarmActivity.class));
+        });
+
+        findViewById(R.id.btnLaunchFirstAid).setOnClickListener(v -> {
+            startActivity(new Intent(this, FirstAidActivity.class));
+        });
+
+        findViewById(R.id.btnLaunchReportIncident).setOnClickListener(v -> {
+            startActivity(new Intent(this, ReportIncidentActivity.class));
+        });
+
         // Initialize contacts list
         contactsList = new ArrayList<>();
         loadContacts();

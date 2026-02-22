@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.teragaurd"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.teragaurd"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -35,7 +35,7 @@ android {
 dependencies {
 
     implementation(libs.appcompat)
-    implementation("com.google.android.material:material:1.13.0")
+    implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.cardview)
