@@ -11,7 +11,27 @@
     <com.mapbox.maps.MapView
         android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="136dp"
+            android:layout_height="73dp"
+            android:textColor="@android:color/white"
+            android:text="2" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/app_name"
+            android:src="@android:drawable/ic_menu_revert"
+            app:backgroundTint="#1E1E1E"
+            app:fabSize="mini"
+            app:tint="@android:color/white" />
+    </com.mapbox.maps.MapView>
 
     <!-- Top Info Card with Temperature and AQI -->
     <com.google.android.material.card.MaterialCardView
@@ -91,18 +111,6 @@
     </com.google.android.material.card.MaterialCardView>
 
     <!-- Back Button -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_margin="16dp"
-        android:src="@android:drawable/ic_menu_revert"
-        android:contentDescription="@string/app_name"
-        app:backgroundTint="#1E1E1E"
-        app:tint="@android:color/white"
-        app:fabSize="mini" />
 
     <!-- Location Info Card at Bottom -->
     <com.google.android.material.card.MaterialCardView

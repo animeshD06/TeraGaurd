@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">teraGaurd</string>
+    <string name="app_name">TerraGuard</string>
     <string name="notifications">Notifications</string>
     <string name="notification_icon">Notification icon</string>
     <string name="profile_picture">Profile picture</string>

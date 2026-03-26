@@ -36,6 +36,15 @@
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="6" />
+
     </LinearLayout>
 
     <ScrollView

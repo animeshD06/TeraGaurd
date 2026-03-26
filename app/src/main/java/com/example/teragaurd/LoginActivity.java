@@ -131,11 +131,14 @@ public class LoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         Log.d(TAG, "signInWithEmail:success");
                         navigateToMain();
-                    } else {
-                        Log.w(TAG, "signInWithEmail:failure", task.getException());
-                        String errorMessage = task.getException() != null 
-                                ? task.getException().getMessage() 
-                                : "Authentication failed";
+                        Exception exception = task.getException();
+                        String errorMessage = "Authentication failed";
+                        if (exception instanceof com.google.firebase.auth.FirebaseAuthInvalidCredentialsException ||
+                            exception instanceof com.google.firebase.auth.FirebaseAuthInvalidUserException) {
+                            errorMessage = "Invalid email or password.";
+                        } else if (exception != null) {
+                            errorMessage = exception.getMessage();
+                        }
                         Toast.makeText(LoginActivity.this, errorMessage, Toast.LENGTH_LONG).show();
                     }
                 });
@@ -228,11 +231,17 @@ public class LoginActivity extends AppCompatActivity {
                                 "Account created successfully!", 
                                 Toast.LENGTH_SHORT).show();
                         navigateToMain();
-                    } else {
-                        Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                        String errorMessage = task.getException() != null 
-                                ? task.getException().getMessage() 
-                                : "Registration failed";
+                        Exception exception = task.getException();
+                        String errorMessage = "Registration failed";
+                        if (exception instanceof com.google.firebase.auth.FirebaseAuthUserCollisionException) {
+                            errorMessage = "An account already exists with this email.";
+                        } else if (exception instanceof com.google.firebase.auth.FirebaseAuthWeakPasswordException) {
+                            errorMessage = "Password should be at least 6 characters.";
+                        } else if (exception instanceof com.google.firebase.auth.FirebaseAuthInvalidCredentialsException) {
+                            errorMessage = "Invalid email address format.";
+                        } else if (exception != null) {
+                            errorMessage = exception.getMessage();
+                        }
                         Toast.makeText(LoginActivity.this, errorMessage, Toast.LENGTH_LONG).show();
                     }
                 });

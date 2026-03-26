@@ -964,6 +964,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/achievementsScroll" />
 
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="302dp"
+                tools:layout_editor_absoluteY="97dp" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
