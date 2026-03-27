@@ -5,7 +5,7 @@
     <string name="profile_picture">Profile picture</string>
     <string name="achievement_badge">Achievement badge</string>
     <!-- Replace YOUR_MAPBOX_ACCESS_TOKEN with your actual Mapbox public token -->
-    <string name="mapbox_access_token">YOUR_MAPBOX_ACCESS_TOKEN</string>
+    <string name="mapbox_access_token">YOUR_MAPBOX_PUBLIC_TOKEN</string>
     <!-- Firebase Google Sign-In Web Client ID -->
     <string name="default_web_client_id">783503439309-dkcf0fh1hfrep0l6j735io3rh171l6q0.apps.googleusercontent.com</string>
     <string name="app_title">TerraGuard</string>
